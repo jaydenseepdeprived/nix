@@ -8,12 +8,20 @@
         size = 13.0;
         draw_bold_text_with_bright_colors = true;
         normal = {
-          family = "IBM Plex";
+          family = "FiraCode";
+          style = "Regular";
+        };
+        bold = {
+          family = "FiraCode";
           style = "Bold";
+        }; 
+        italic = {
+          family = "FiraCode";
+          style = "Italic";
         };
       };
 
-      colors.primary.background = "0f0f0f";
+      colors.primary.background = "#0f0f0f";
     };
     
     theme = "catppuccin_mocha";
