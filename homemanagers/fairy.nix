@@ -1,5 +1,6 @@
 {                                                                                                                                                                                               imports = [                                                                                                                                                                                 
     ./modules/git.nix
+    ./modules/alacritty.nix
   ];                                                                                                                                                                                          
                                                                                                                                                                                               
   fairy = {                                                                                                                                                                                       username = "fairy";                                                                                                                                                                       

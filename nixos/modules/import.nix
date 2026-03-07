@@ -10,7 +10,6 @@
     ./bootloader.nix    
     ./nm.nix  
     ./trim.nix
-    ./alacritty.nix
     ./niri.nix
     ./waybar.nix   
   ];

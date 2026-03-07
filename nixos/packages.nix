@@ -6,6 +6,9 @@
 
   environment.systemPackages = with pkgs; [
     
+    # terminal emulator 
+    alacritty
+
     # browsers
     firefox
     librewolf
