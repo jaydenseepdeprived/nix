@@ -10,23 +10,26 @@
     firefox
     librewolf
 
+    # text editors
+    vim
+
     # cli utils
     ffmpeg
     openssl
     unzip
     zip
-    light
+    brightnessctl
     git
     gh
     codeberg-cli
     wget
-    light
+    brightnessctl
     bluez
     bluez-tools
     lm_sensors
     fio
-    memtest
-    smartmonctl
+    memtest86plus
+    smartmontools
 
     # cool cli tools
     fastfetch
@@ -46,7 +49,6 @@
     # wm and stuff
     xwayland
     wl-clipboard
-    chiphist
     waybar
     dmenu
     niri
@@ -81,7 +83,10 @@
     # programming 
     gnumake 
     gcc
-    python # most of these are in nix-shell
+    vscode
+    code-cursor
+    jdk21
+    python3 # most of these are in nix-shell
 
     # graphics acceleration
     #   for intel iGPU
