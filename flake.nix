@@ -3,18 +3,18 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    nixpkgs.stable.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
 
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs"
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     #TODO nixvim
     # nixvim = {};
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ...  }: {@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ...  }@inputs:
 
     let 
       system = "x86_64-linux";
@@ -37,7 +37,12 @@
     
       homeConfiguration.faye = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        modules = [ ./homemanager/home.nix];
+        modules = [ ./homemanagers/faye.nix];
+      };
+
+      homeConfiguration.fairy = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+        modules = [ ./homemanagers/fairy.nix];
       };
 
     };
