@@ -5,7 +5,7 @@
     ./modules/import.nix
   ];
 
-  disalbledModules = [
+  disabledModules = [
   ];
 
   networking.hostName = "nix0YXS"; # Define hostnames

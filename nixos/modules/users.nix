@@ -3,6 +3,7 @@
   users = {
     
     users.faye = {
+      isNormalUser = true;
       description = "default user for casual (with steam)";
       extraGroups = [ 
         "networkmanager"
@@ -17,6 +18,7 @@
     };
 
     users.fairy = {
+      isNormalUser = true;
       description = "magical software guru";
       extraGroups = [ 
         "networkmanager"

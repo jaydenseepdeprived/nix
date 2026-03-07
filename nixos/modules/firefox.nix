@@ -1,0 +1,3 @@
+{
+  programs.firefox.enanbled = true;
+}
