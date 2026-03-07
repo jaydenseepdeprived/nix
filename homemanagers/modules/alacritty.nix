@@ -16,7 +16,7 @@
       colors.primary.background = "0f0f0f";
     };
     
-    theme = "catpuccin_mocha";
+    theme = "catppuccin_mocha";
   };
 }
 
