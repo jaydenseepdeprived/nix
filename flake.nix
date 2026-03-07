@@ -10,6 +10,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    niri.url = "github:YaLTeR/niri";
+
     #TODO nixvim
     # nixvim = {};
   };
@@ -35,14 +37,18 @@
         ];
       };
     
-      homeConfiguration.faye = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.faye = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        modules = [ ./homemanagers/faye.nix];
+        modules = [ 
+          ./homemanagers/faye.nix
+        ];
       };
 
-      homeConfiguration.fairy = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.fairy = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        modules = [ ./homemanagers/fairy.nix];
+        modules = [ 
+          ./homemanagers/fairy.nix
+        ];
       };
 
     };
