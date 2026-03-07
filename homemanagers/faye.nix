@@ -1,8 +1,5 @@
 {                                                                                                                                                                                               imports = [
     ./modules/git.nix
-    ./modules/alacritty.nix
-    ./modules/waybar.nix
-    ./modules/niri.nix
   ];
                                                                                                                                                                                               
   home = {                                                                                                                                                                                    

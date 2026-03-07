@@ -9,6 +9,9 @@
     ./xserver.nix
     ./bootloader.nix    
     ./nm.nix  
-    ./trim.nix   
+    ./trim.nix
+    ./alacritty.nix
+    ./niri.nix
+    ./waybar.nix   
   ];
 }
