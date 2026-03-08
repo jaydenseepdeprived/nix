@@ -5,8 +5,7 @@
       window.opacity = 0.93;
 
       font = {
-        size = 13.0;
-        draw_bold_text_with_bright_colors = true;
+        size = 11.0;
         normal = {
           family = "FiraCode";
           style = "Regular";
