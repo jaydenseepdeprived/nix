@@ -11,7 +11,9 @@
     };
 
     niri.url = "github:YaLTeR/niri";
-
+    
+    wallpaper-rs.url = "github:hambosto/wallpaper-rs";
+    
     #TODO nixvim
     # nixvim = {};
   };
