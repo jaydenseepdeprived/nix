@@ -15,8 +15,8 @@
       touchpad.accelProfile = "flat";
     };
 
-    videoDrivers = [ "modesetting" ];
-    #videoDrivers = [ "amdgpu" ];
+    #videoDrivers = [ "modesetting" ];
+    videoDrivers = [ "amdgpu" ];
     #videoDrivers = [ "nvidia" ];
   };
 }
