@@ -12,7 +12,10 @@
 
     niri.url = "github:YaLTeR/niri";
     
-    wallpaper-rs.url = "github:hambosto/wallpaper-rs";
+    wallpaper-rs = {
+      url = "github:hambosto/wallpaper-rs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     
     #TODO nixvim
     # nixvim = {};
