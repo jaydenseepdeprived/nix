@@ -12,6 +12,7 @@
     ./nm.nix  
     ./trim.nix
     ./niri.nix
-    ./waybar.nix   
+    ./waybar.nix 
+    ./systemd.nix  
   ];
 }
