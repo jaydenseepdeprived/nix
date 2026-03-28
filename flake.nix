@@ -46,14 +46,22 @@
         pkgs = nixpkgs.legacyPackages.${system};
         modules = [ 
           ./homemanagers/faye.nix
+          inputs.wallpaper-rs.homeManagerModules.default
         ];
+        extraSpecialArgs = {
+          inherit inputs;
+        };
       };
 
       homeConfigurations.fairy = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         modules = [ 
           ./homemanagers/fairy.nix
+          inputs.wallpaper-rs.homeManagerModules.default
         ];
+        extraSpecialArgs= {
+          inherit inputs;
+        };
       };
 
     };

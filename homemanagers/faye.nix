@@ -1,7 +1,7 @@
 {                                                                                                                                                                                               imports = [
     ./modules/git.nix
     ./modules/alacritty.nix
-    ./modules/wallpaper.nix
+    #./modules/wallpaper.nix
   ];
                                                                                                                                                                                               
   home = {                                                                                                                                                                                    
