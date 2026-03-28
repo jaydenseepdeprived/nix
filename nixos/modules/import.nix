@@ -3,7 +3,8 @@
     ./bluetooth.nix   
     ./env.nix     
     ./ly.nix  
-    ./sound.nix  
+    ./sound.nix 
+    ./graphics.nix 
     ./users.nix
     ./firefox.nix        
     ./xserver.nix
@@ -11,6 +12,7 @@
     ./nm.nix  
     ./trim.nix
     ./niri.nix
-    ./waybar.nix   
+    ./waybar.nix 
+    ./systemd.nix  
   ];
 }

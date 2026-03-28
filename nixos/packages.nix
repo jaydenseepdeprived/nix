@@ -59,6 +59,7 @@
     i3
     i3status
     i3lock
+    swaybg
 
     # sound
     pipewire
@@ -83,27 +84,40 @@
     signal-desktop
     zoom-us
 
-    # programming 
-    gnumake 
-    gcc
+    # ide
     vscode
     code-cursor
+
+    # office
+    libreoffice-fresh
+
+    # latex & markdown
+    tectonic
+    pandoc
+    texliveFull
+
+    # languages
+    gnumake 
+    gcc
     jdk21
     python3 # most of these are in nix-shell
 
     # graphics acceleration
     #   for intel iGPU
-    intel-media-driver
+    # intel-media-driver
     # intel-media-sdk
     vpl-gpu-rt   
     # onevpl-intel-gpu
-    intel-compute-runtime
+    # intel-compute-runtime
 
     # other
     home-manager
   ];
 
+  services.udisks2.enable = true;
+
   fonts.packages = with pkgs; [
+    comic-mono
     nerd-fonts.fira-code
     noto-fonts
     noto-fonts-cjk-sans

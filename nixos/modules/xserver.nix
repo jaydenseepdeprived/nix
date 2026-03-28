@@ -3,7 +3,11 @@
     enable = true;
 
     layout = "us";
-    xkbVariant = "";
+    xkb = {
+      layout = "us";
+      variant = "";
+      options = "altwin:swap_alt_win";
+    };
 
     libinput = {
       enable = true;
@@ -11,8 +15,8 @@
       touchpad.accelProfile = "flat";
     };
 
-    videoDrivers = [ "modesetting" ];
-    #videoDrivers = [ "amdgpu" ];
+    #videoDrivers = [ "modesetting" ];
+    videoDrivers = [ "amdgpu" ];
     #videoDrivers = [ "nvidia" ];
   };
 }

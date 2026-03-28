@@ -8,8 +8,8 @@
   disabledModules = [
   ];
 
-  networking.hostName = "nix0YXS"; # Define hostnames
-  #networking.hostName = "nix1YXS";
+  #networking.hostName = "nix0YXS"; # Define hostnames
+  networking.hostName = "nix1YXS";
   #networking.hostName = "nix2YXS";
   #networking.hostName = "nix3YXS";
   #networking.hostName = "nix4YXS";
